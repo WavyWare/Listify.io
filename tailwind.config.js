@@ -4,6 +4,7 @@ module.exports = {
       './*.{html,js}',
       './dist/**/*.{html,js}',
       './src/**/*.{html,js}',
+      './login/*.{html,js}',
   ],
   theme: {
     extend: {},

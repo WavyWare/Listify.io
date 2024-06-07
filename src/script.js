@@ -1,0 +1,1 @@
+document.querySelector('#login').addEventListener('click', () => { window.location.href = './login/index.html'; })

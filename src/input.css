@@ -8,11 +8,16 @@
     font-size: 2rem;
 }
 
-.img-landing {
-    background-image: url(./../img/stock/grocery.jpg);
+.img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.img-landing {
+    background-image: url(./../img/stock/grocery.jpg);
+}
+.img-login {
+
 }
 
 .content-parent {
