@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-logo {
+    font-family: Advent Pro, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.img-landing {
+    background-image: url(./../img/stock/grocery.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.content-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
