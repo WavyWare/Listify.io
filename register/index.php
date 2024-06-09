@@ -45,22 +45,32 @@
     <div class="flex justify-center items-center h-screen img-login">
         <div class="border-zinc-300 border-4 text-center py-5 rounded-3xl glass">
             <h1 class="text-2xl text-center py-2 font-semibold">Zarejestruj się</h1>
-            <label>
-                <input type="text" placeholder="Wpisz nick" class="input input-bordered w-full max-w-xs my-2" />
-            </label><br>
-            <label>
-                <input type="text" placeholder="Wpisz e-mail" class="input input-bordered w-full max-w-xs mb-2" />
-            </label>
-            <label>
-                <input type="password" placeholder="Wpisz hasło" class="input input-bordered w-full max-w-xs mb-2" />
-            </label><br>
-            <label>
-                <input type="password" placeholder="Powtórz hasło" class="input input-bordered w-full max-w-xs mb-2" />
-            </label>
-            <label>
-                <input type="submit" class="btn btn-wide my-2" value="Przejdź">
-            </label><br />
+            <form method="post" action="register.php">
+                <label>
+                    <input type="text" placeholder="Wpisz login" class="input input-bordered w-full max-w-xs my-2" name="username"/>
+                </label><br>
+                <label>
+                    <input type="text" placeholder="Wpisz e-mail" class="input input-bordered w-full max-w-xs mb-2" name="email"/>
+                </label>
+                <label>
+                    <input type="password" placeholder="Wpisz hasło" class="input input-bordered w-full max-w-xs mb-2" name="password"/>
+                </label><br>
+                <label>
+                    <input type="password" placeholder="Powtórz hasło" class="input input-bordered w-full max-w-xs mb-2" name="confirm_password"/>
+                </label>
+                <label>
+                    <input type="submit" class="btn btn-wide my-2" value="Przejdź">
+                </label><br />
+
             <a href="./../login/" class="link text-white">Posiadasz już konto? Zaloguj się!</a>
+            <?php
+            session_start();
+            if (isset($_SESSION['err'])) {
+                echo '<p class="mx-3 font-bold text-red-600">' . $_SESSION['err'] . '</p>';
+                unset($_SESSION['err']);
+            }
+            ?>
+            </form>
         </div>
     </div>
 

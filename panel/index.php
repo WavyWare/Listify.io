@@ -1,9 +1,10 @@
 <?php
-//    session_start();
-//    if (!isset($_SESSION['user_id'])) {
-//        header('Location: ./../login/index.php');
-//        exit;
-//    }
+global $pdo;
+session_start();
+    if (!isset($_SESSION['user_id'])) {
+        header('Location: ./../login/index.php');
+        exit;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="pl">
@@ -24,10 +25,20 @@
             <a href="./../" class="rounded-none btn btn-ghost text-xl text-logo pb-0 border-b-primary border-b-2"><i class="bi bi-card-checklist"></i>Listify.io</a>
         </div>
         <div class="navbar-end">
-            Zalogowano jako:&nbsp;<span class="font-bold px-2"><?php echo /*htmlspecialchars($_SESSION['username'])*/ 'test123';?>&nbsp;</span>
+            Zalogowano jako:&nbsp;<span class="font-bold mx-2"><?php echo htmlspecialchars($_SESSION['username']);?>&nbsp;</span>
             <a class="btn btn-accent mx-2" href="./logout.php">Wyloguj się</a>
         </div>
     </div>
-
+    <div class="md:container mx-auto pt-8">
+        <div class="flex justify-evenly">
+            <h1 class="text-3xl">Panel list:</h1>
+            <a class="btn btn-accent rounded-full" href="./stworz/">Dodaj nową <i class="bi bi-plus-lg"></i></a>
+        </div>
+        <?php
+            $stmt = $pdo->prepare('SELECT count(*) FROM listify.lists l join listify.users_lists ul on l.id = ul.list_id join listify.users u on ul.user_id = u.id');
+            $stmt->execute([]);
+            $user = $stmt->fetch();
+        ?>
+    </div>
     </body>
 </html>

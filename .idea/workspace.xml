@@ -4,15 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a2c5fd1-39ed-4d5e-98b8-80ff19961461" name="Changes" comment="Adding register.js for soon update">
-      <change afterPath="$PROJECT_DIR$/login/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/panel/logout.php" afterDir="false" />
+    <list default="true" id="0a2c5fd1-39ed-4d5e-98b8-80ff19961461" name="Changes" comment="Workspace files">
+      <change afterPath="$PROJECT_DIR$/panel/stworz/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register/register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/login/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panel/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/panel/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panel/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/panel/logout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/register/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/output.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +143,7 @@
       <workItem from="1717690325442" duration="4020000" />
       <workItem from="1717758769077" duration="20492000" />
       <workItem from="1717837729213" duration="2022000" />
-      <workItem from="1717947263799" duration="6040000" />
+      <workItem from="1717947263799" duration="11316000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <option name="closed" value="true" />
@@ -213,7 +217,39 @@
       <option name="project" value="LOCAL" />
       <updated>1717950010066</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Part 1 of PHP files">
+      <option name="closed" value="true" />
+      <created>1717953815351</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717953815351</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Optimalization for CSS">
+      <option name="closed" value="true" />
+      <created>1717953843588</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717953843588</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Optimalization for CSS">
+      <option name="closed" value="true" />
+      <created>1717953853028</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717953853028</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Workspace files">
+      <option name="closed" value="true" />
+      <created>1717953868162</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1717953868162</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +265,9 @@
     <MESSAGE value="Update html and php" />
     <MESSAGE value="Styles and images" />
     <MESSAGE value="Adding register.js for soon update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding register.js for soon update" />
+    <MESSAGE value="Part 1 of PHP files" />
+    <MESSAGE value="Optimalization for CSS" />
+    <MESSAGE value="Workspace files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Workspace files" />
   </component>
 </project>

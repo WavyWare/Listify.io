@@ -40,7 +40,7 @@
                 <p class="text-white text-lg px-10 md:px-24 pb-12 font-semibold lg:text-3xl">
                     Zarządzaj wspólnymi listami zakupów z domownikami w czasie rzeczywistym dzięki Listify.io. Nasza intuicyjna aplikacja pozwala na precyzyjne planowanie zakupów, co przekłada się na mniejsze wydatki i unikanie spontanicznych, nieprzemyślanych zakupów. Oszczędzaj pieniądze i ciesz się lepszą organizacją każdego dnia.
                 </p>
-                <button class="btn btn-wide m-5">Przejdź do swoich list.</button>
+                <a class="btn btn-wide m-5" href="./login/">Przejdź do swoich list.</a>
                 <div class="flex justify-evenly py-6">
                     <div class="block visible md:invisible ">
                         <a class="btn btn-accent" href="./login/">Zaloguj się!</a>
