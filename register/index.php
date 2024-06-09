@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         body {
-            background-image: url('./../img/stock/login.jpg');
+            background-image: url('./../img/stock/register.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -39,26 +39,32 @@
         <a class="btn btn-ghost text-xl text-logo pb-0"><i class="bi bi-card-checklist"></i>Listify.io</a>
     </div>
     <div class="navbar-end invisible">
-        <button class="btn btn-primary text-lg">Zaloguj się!</button>
+        <a href="./../" class="btn btn-primary text-lg">Zaloguj się!</a>
     </div>
 </div>
     <div class="flex justify-center items-center h-screen img-login">
         <div class="border-zinc-300 border-4 text-center py-5 rounded-3xl glass">
-            <h1 class="text-2xl text-center py-2 font-semibold">Zaloguj się</h1>
+            <h1 class="text-2xl text-center py-2 font-semibold">Zarejestruj się</h1>
             <label>
-                <input type="text" placeholder="Wpisz e-mail" class="input input-bordered w-full max-w-xs my-2" />
+                <input type="text" placeholder="Wpisz nick" class="input input-bordered w-full max-w-xs my-2" />
+            </label><br>
+            <label>
+                <input type="text" placeholder="Wpisz e-mail" class="input input-bordered w-full max-w-xs mb-2" />
             </label>
             <label>
                 <input type="password" placeholder="Wpisz hasło" class="input input-bordered w-full max-w-xs mb-2" />
-            </label><br />
+            </label><br>
+            <label>
+                <input type="password" placeholder="Powtórz hasło" class="input input-bordered w-full max-w-xs mb-2" />
+            </label>
             <label>
                 <input type="submit" class="btn btn-wide my-2" value="Przejdź">
             </label><br />
-            <a href="./../register/" class="link text-white">Nie masz konta? Zarejestruj się!</a>
+            <a href="./../login/" class="link text-white">Posiadasz już konto? Zaloguj się!</a>
         </div>
     </div>
 
 
-<script src="./login.js" type="text/javascript"></script>
+<script src="register.js" type="text/javascript"></script>
 </body>
 </html>
