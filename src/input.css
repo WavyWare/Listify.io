@@ -16,10 +16,6 @@
 .img-landing {
     background-image: url(./../img/stock/grocery.jpg);
 }
-.img-login {
-
-}
-
 .content-parent {
     display: flex;
     justify-content: center;
