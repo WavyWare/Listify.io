@@ -2,9 +2,12 @@
 module.exports = {
   content: [
       './*.{html,js}',
-      './dist/**/*.{html,js}',
-      './src/**/*.{html,js}',
-      './login/*.{html,js}',
+      './dist/**/*.{html,js,php}',
+      './src/**/*.{html,js,php}',
+      './login/*.{html,js,php}',
+      './register/*.{html,js,php}',
+      './panel/*.{html,js,php}',
+      './panel/**/.{html,js,php}',
   ],
   theme: {
     extend: {},
