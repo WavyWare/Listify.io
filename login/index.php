@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if (isset($_SESSION['user_id'])) {
+        header('Location: ./../panel/index.php');
+        exit;
+    }
+?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -45,17 +52,19 @@
     <div class="flex justify-center items-center h-screen img-login">
         <div class="border-zinc-300 border-4 text-center py-5 rounded-3xl glass">
             <h1 class="text-2xl text-center py-2 font-semibold">Zaloguj się</h1>
-            <label>
-                <input type="text" placeholder="Wpisz e-mail" class="input input-bordered w-full max-w-xs my-2"/>
-            </label>
-            <label>
-                <input type="password" placeholder="Wpisz hasło" class="input input-bordered w-full max-w-xs mb-2" />
-            </label><br />
-            <label>
-                <input type="submit" class="btn btn-wide my-2" value="Przejdź">
-            </label><br />
-            <span style="display: none; transition: all .2s ease-in-out;" id="error" class="text-center text-sm text-red-600 font-bold">Nieprawidłowy adres e-mail.<br/></span>
-            <a href="./../register/" class="link text-white">Nie masz konta? Zarejestruj się!</a>
+            <form action="login.php" method="post">
+                <label>
+                    <input type="text" placeholder="Wpisz e-mail" class="input input-bordered w-full max-w-xs my-2" name="login"/>
+                </label>
+                <label>
+                    <input type="password" placeholder="Wpisz hasło" class="input input-bordered w-full max-w-xs mb-2" name="password"/>
+                </label><br />
+                <label>
+                    <input type="submit" class="btn btn-wide my-2" value="Przejdź">
+                </label><br />
+                <span style="display: none; transition: all .2s ease-in-out;" id="error" class="text-center text-sm text-red-600 font-bold">Nieprawidłowy adres e-mail.<br/></span>
+                <a href="./../register/" class="link text-white">Nie masz konta? Zarejestruj się!</a>
+            </form>
         </div>
     </div>
 
