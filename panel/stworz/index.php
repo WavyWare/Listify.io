@@ -29,6 +29,24 @@ if (!isset($_SESSION['user_id'])) {
     </div>
 </div>
 <div class="md:container mx-auto">
+    <p class="text-center text-3xl my-5">Nowa Lista</p>
+    <div class="m-5 bg-zinc-400 border-zinc-600 border-2 flex justify-center items-center h-screen font-semibold">
+
+        <form method="get" action="./create.php">
+            <label>
+                Nazwa listy:
+                <input type="text" placeholder="Nowa lista" class="input input-bordered max-w-xs my-2 w-full" name="list_name" required/>
+            </label><br/>
+            <label>
+                Opis listy:
+                <textarea class="textarea textarea-bordered my-2 w-full border" placeholder="Nasza rodzinna lista zakupów..." name="desc"></textarea>
+            </label><br>
+            <div class="flex justify-stretch mx-auto">
+                <a class="btn btn-accent rounded-full mx-auto" type="submit" href="./../">Wróć do panelu</a>
+                <input class="btn btn-primary rounded-full mx-auto" type="submit" value="Utwórz">
+            </div>
+        </form>
+    </div>
 
 </div>
 </body>

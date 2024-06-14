@@ -34,11 +34,7 @@ session_start();
             <h1 class="text-3xl">Panel list:</h1>
             <a class="btn btn-accent rounded-full" href="./stworz/">Dodaj nową <i class="bi bi-plus-lg"></i></a>
         </div>
-        <?php
-            $stmt = $pdo->prepare('SELECT count(*) FROM listify.lists l join listify.users_lists ul on l.id = ul.list_id join listify.users u on ul.user_id = u.id');
-            $stmt->execute([]);
-            $user = $stmt->fetch();
-        ?>
+
     </div>
     </body>
 </html>
